@@ -1,0 +1,31 @@
+.controlsContainer {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.searchInput {
+  outline: transparent;
+  border: none;
+  height: 100%;
+  padding: 1rem 2rem;
+  background-color: var(--elements);
+  color: var(--input-color);
+}
+
+@media screen and (max-width: 768px) {
+  .searchInput {
+    width: 100%;
+  }
+
+  .controlsContainer {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .controlsContainer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,73 @@
+.backBtn {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  margin: 30px 0 50px 0;
+  background-color: var(--elements);
+  padding: 5px 30px;
+  text-decoration: none;
+  box-shadow: var(--box-shadow);
+  color: var(--text-color);
+  border-radius: 5px;
+  transition: 0.2s background-color;
+
+  &:hover {
+    background-color: var(--background);
+  }
+}
+
+.detailsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 100px;
+}
+
+.countryTitle {
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.infoTopic {
+  font-weight: 600;
+}
+
+.infoContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 2;
+}
+
+.flag {
+  width: 100%;
+  height: 440px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 900px) {
+  .detailsContainer {
+    gap: 20px;
+  }
+
+  .infoContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .backBtn {
+    margin: 15px 0 50px 0;
+  }
+  .countryDetailsContainer {
+    padding: 30px;
+  }
+
+  .flag {
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .detailsContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
